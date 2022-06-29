@@ -1,0 +1,142 @@
+.top-nav {
+    background-color: #252e38;
+
+    div.top-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 90%;
+        margin: auto;
+        font-size: 13px;
+        font-weight: 600;
+        padding-top: 10px;
+        margin-bottom: 30px;
+        div.nav-left {
+            ul {
+                margin: 0px;
+                display: flex;
+                li {
+                    margin: 10px 20px;
+                    span {
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+        div.nav-center {
+            h4 {
+                font-size: 25px;
+                margin: 10px;
+            }
+        }
+        div.nav-right {
+            ul {
+                margin: 0px;
+                display: flex;
+                li {
+                    margin: 10px 20px;
+                    span {
+                        margin-right: 5px;
+                        top: 5px;
+                    }
+                }
+            }
+        }
+    }
+    div.search-container {
+        width: 60%;
+        margin: auto;
+        ::-webkit-input-placeholder {
+            /* Edge */
+            font-size: 13px;
+            font-weight: 600;
+        }
+        :-ms-input-placeholder {
+            /* Internet Explorer 10-11 */
+            font-size: 13px;
+            font-weight: 600;
+        }
+        ::placeholder {
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        div.search-bar input[type="text"] {
+            padding: 10px;
+            font-size: 14px;
+            border: none;
+            float: left;
+            height: 40px;
+            width: 90%;
+            background: #ffffff;
+        }
+        div.search-bar input:focus-visible {
+            border: none;
+        }
+        div.search-bar input:active {
+            border: none;
+        }
+
+        /* Style the submit button */
+        div.search-bar button {
+            float: left;
+            width: 10%;
+            padding: 10px;
+            background: #fff;
+            font-size: 13px;
+            height: 40px;
+            border: none;
+            border-left: none; /* Prevent double borders */
+            cursor: pointer;
+        }
+
+        div.search-bar button:hover {
+            // background: #lightgrey;
+        }
+
+        /* Clear floats */
+        div.search-bar::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+    }
+    div.bottom-nav-container {
+        width: 100%;
+        margin: 20px 0px 0px 0px;
+        padding-bottom: 10px;
+        ul {
+            display: flex;
+            width: 70%;
+            margin: auto;
+            padding: 0px;
+            justify-content: space-evenly;
+            li{
+                text-transform: uppercase;
+                font-weight: 600;
+                font-size: 14px;
+                padding-bottom: 5px;
+                border-bottom: none;
+                cursor: pointer;
+            }
+            li:hover{
+                border-bottom: 1.5px solid #fff;
+
+            }
+            li.active{
+                border-bottom: 1.5px solid #fff;
+
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 900px){
+    .top-nav div.top-container{
+        width: 100%;
+    }
+    .top-nav div.bottom-nav-container ul{
+        width: 100%;
+    }
+}
+
